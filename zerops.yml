@@ -20,9 +20,9 @@ zerops:
         ZITADEL_DATABASE_POSTGRES_ADMIN_USERNAME: ${pgdb_superUser}
         ZITADEL_DATABASE_POSTGRES_ADMIN_PASSWORD: ${pgdb_superUserPassword}
         ZITADEL_DATABASE_POSTGRES_ADMIN_SSL_MODE: disable
-        ZITADEL_MASTERKEY: "11111115983476589736516490137693"
-        ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME: "root"
-        ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD: "RootPassword1!"
+        ZITADEL_MASTERKEY: "MasterkeyNeedsToHave32Characters"
+        #ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME: "root"
+        #ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD: "RootPassword1!"
 
       initCommands:
         - sudo chmod +x /var/www/install.sh
