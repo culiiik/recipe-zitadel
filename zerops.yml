@@ -20,6 +20,7 @@ zerops:
         ZITADEL_DATABASE_POSTGRES_ADMIN_USERNAME: ${pgdb_superUser}
         ZITADEL_DATABASE_POSTGRES_ADMIN_PASSWORD: ${pgdb_superUserPassword}
         ZITADEL_DATABASE_POSTGRES_ADMIN_SSL_MODE: disable
+        ZITADEL_MASTERKEY: "11111115983476589736516490137693"
 
       initCommands:
         - sudo chmod +x /var/www/install.sh
@@ -40,4 +41,4 @@ zerops:
         - port: 8080
           httpSupport: true
   
-      start: run.sh
+      start: /var/www/run.sh
