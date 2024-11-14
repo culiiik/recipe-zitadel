@@ -1,3 +1,3 @@
-tr -dc A-Za-z0-9 </dev/urandom | head -c 32 > ./zitadel-masterkey
+tr -dc A-Za-z0-9 </dev/urandom | head -c 32 > /var/www/zitadel-masterkey
 
-/var/www/zitadel start-from-init --masterkey "${ZITADEL_MASTERKEY}" --tlsMode disabled --externalDomain "zitadel"
+/var/www/zitadel start-from-init --masterkeyFile /var/www/zitadel-masterkey --tlsMode disabled --externalDomain "zitadel" 
