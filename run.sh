@@ -1,1 +1,1 @@
-zitadel start-from-init --masterkey "${ZITADEL_MASTERKEY}" --tlsMode disabled --externalDomain "zitadel"
+/var/www/zitadel start-from-init --masterkey "${ZITADEL_MASTERKEY}" --tlsMode disabled --externalDomain "zitadel"
